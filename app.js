@@ -61,6 +61,9 @@ const updcity = async (city)=>{
     
 }
 
+window.addEventListener('load',()=>{
+    updcity('Shimoga');
+})
 
 
 cityform.addEventListener('submit',(a)=>{
