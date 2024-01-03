@@ -1,0 +1,31 @@
+body{
+    background: #eeedec;
+    letter-spacing: 0.1em;
+    font-size: 0.5em;
+}
+.container{
+    max-width: 400px;
+}
+.label1{
+    font-size: 20px;
+  
+}
+.change-location{
+    font-size: 20px;
+
+}
+.condition{
+    font-size: 30px;
+    font-weight: bolder;
+}
+.details{
+    font-size: 10px;
+}
+.icon{
+    position: relative;
+    top: -40px;
+    border-radius: 100px;
+}
+.card{
+    background-color: #eeedec;
+}
