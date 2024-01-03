@@ -19,15 +19,15 @@ const uiupdate = (data,isday)=>{
     const dorn=isday;
   const icom = data.weather[0].icon;
   //console.log(icom)
-  const iconsrc = `icons/${icom}.png`;
+  const iconsrc = `https://github.com/Unmasked-Ninjas/WeatherGG/blob/485d0bea74cd1bcb9675e15b353fe4a3562695ba/icons/${data.weather[0].icon}.png?raw=true`;
   icon.setAttribute('src', iconsrc);
 
     if(dorn==='day'){
-        const imagesrc = `icons/${dorn}.svg`;
+        const imagesrc = `https://github.com/Unmasked-Ninjas/WeatherGG/blob/485d0bea74cd1bcb9675e15b353fe4a3562695ba/icons/${dorn}.svg?raw=true`;
         time.setAttribute('src',imagesrc);
     }
     else{
-        const imagesrc = `icons/${dorn}.svg`;
+        const imagesrc = `https://github.com/Unmasked-Ninjas/WeatherGG/blob/485d0bea74cd1bcb9675e15b353fe4a3562695ba/icons/${dorn}.svg?raw=true`;
         time.setAttribute('src',imagesrc);
     }
 }
@@ -61,9 +61,14 @@ const updcity = async (city)=>{
     
 }
 
+// const displayKanpurWeather = () => {
+//   updcity('Kanpur'); // Display Kanpur weather by default
+// };
+
 window.addEventListener('load',()=>{
-    updcity('Shimoga');
-})
+  updcity('Shimoga')
+});
+
 
 
 cityform.addEventListener('submit',(a)=>{
